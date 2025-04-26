@@ -17,7 +17,7 @@ def print_binary_numbers(n):
     queue = deque()
     queue.append(1)
 
-    for _ in range(n):
+    for i in range(n):
         binary = queue.popleft()
         print(binary)
         queue.append(binary * 10)
